@@ -110,7 +110,7 @@
 
     "sync-test-abuildbot": {
         "boards": [],
-        "builder_class_name": "test_builders.ManifestVersionedSyncBuilder",
+        "builder_class_name": "config.builders.test_builders.SyncBuilder",
         "name": "sync-test-abuildbot"
     }
 }
