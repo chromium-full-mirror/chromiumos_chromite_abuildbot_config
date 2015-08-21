@@ -16,7 +16,7 @@ from chromite.cbuildbot.stages import sync_stages
 
 class SuccessStage(generic_stages.BuilderStage):
   """Build stage declares success!"""
-  def Run(self):
+  def PerformStage(self):
     logging.info('!!!SuccessStage, FTW!!!')
 
 
