@@ -23,10 +23,6 @@ class SuccessStage(generic_stages.BuilderStage):
 class SyncBuilder(generic_builders.Builder):
   """Builder that performs sync, then exits."""
 
-  def GetVersionInfo(self):
-    """This version isn't very meaningful, just pin it."""
-    return manifest_version.VersionInfo('1.0.0')
-
   def GetSyncInstance(self):
     """Returns an instance of a SyncStage that should be run."""
     return self._GetStageInstance(sync_stages.SyncStage)
