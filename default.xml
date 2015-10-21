@@ -13,4 +13,9 @@ Your sources have been sync'd successfully.
 
   <project path="chromite" name="chromiumos/chromite" />
   <project path="chromite/config" name="chromiumos/chromite/abuildbot_config" />
+
+  <!-- To get requirements for cros lint -->
+  <project path="chromium/tools/depot_tools"
+           name="chromium/tools/depot_tools"
+           revision="b6795643ec0305ba2ff862fcd0f450756aa5e58c" />
 </manifest>
