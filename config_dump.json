@@ -1,14 +1,19 @@
 {
     "_default": {
-        "manifest_repo_url": "https://chromium.googlesource.com/chromiumos/chromite/abuildbot_config"
+        "boards": [],
+        "manifest_repo_url": "https://chromium.googlesource.com/chromiumos/chromite/abuildbot_config",
+        "gs_path": "gs://abuildbot-build-archive/abuildbot"
+
     },
     "_site_params": {
     },
     "_templates": {},
 
     "sync-test-abuildbot": {
-        "boards": [],
-        "builder_class_name": "config.builders.test_builders.SyncBuilder",
-        "name": "sync-test-abuildbot"
+        "builder_class_name": "config.builders.test_builders.SyncBuilder"
+    },
+
+    "simple-archive-abuildbot": {
+        "builder_class_name": "config.builders.test_builders.ArchiveBuilder"
     }
 }
